@@ -1,0 +1,86 @@
+10
+
+dir
+79982
+https://systemwrapper.svn.codeplex.com/svn/SystemWrapper.Tests
+https://systemwrapper.svn.codeplex.com/svn
+
+
+
+2011-07-12T20:47:36.920000Z
+76837
+unknown
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+2327b42d-5241-43d6-9e2a-de5ac946f064
+
+SystemWrapper.Tests.csproj
+file
+
+
+
+
+2011-09-15T08:25:24.508782Z
+b02b0577e6f0f0951ac1b8628f1f2458
+2011-07-12T20:47:36.920000Z
+76837
+unknown
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6448
+
+Configuration
+dir
+
+Diagnostics
+dir
+
+IO
+dir
+
+Data
+dir
+
+libs
+dir
+
+TestData
+dir
+
+Reflection
+dir
+
+Properties
+dir
+

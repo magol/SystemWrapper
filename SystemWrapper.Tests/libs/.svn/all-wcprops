@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/64998/SystemWrapper.Tests/libs
+END
+Rhino.Mocks.dll
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/22068/SystemWrapper.Tests/libs/Rhino.Mocks.dll
+END
+Rhino.Mocks.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/22068/SystemWrapper.Tests/libs/Rhino.Mocks.xml
+END

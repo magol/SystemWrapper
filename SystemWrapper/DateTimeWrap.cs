@@ -1,5 +1,6 @@
 using System;
 using System.Globalization;
+using System.Runtime.Serialization;
 
 namespace SystemWrapper
 {
@@ -394,11 +395,6 @@ namespace SystemWrapper
             get { return DateTimeInstance.Month; }
         }
 
-        public IDateTimeWrap Now
-        {
-            get { return new DateTimeWrap(DateTime.Now);  }
-        }
-
         public int Second
         {
             get { return DateTimeInstance.Second; }
@@ -412,16 +408,6 @@ namespace SystemWrapper
         public TimeSpan TimeOfDay
         {
             get { return DateTimeInstance.TimeOfDay; }
-        }
-
-        public IDateTimeWrap Today
-        {
-            get { return new DateTimeWrap(DateTime.Today); }
-        }
-
-        public IDateTimeWrap UtcNow
-        {
-            get { return new DateTimeWrap(DateTime.UtcNow); }
         }
 
         public int Year
@@ -474,10 +460,7 @@ namespace SystemWrapper
             return new DateTimeWrap(DateTimeInstance.AddYears(value));
         }
 
-        public int Compare(IDateTimeWrap t1, IDateTimeWrap t2)
-        {
-            return DateTime.Compare(t1.DateTimeInstance, t2.DateTimeInstance);
-        }
+
 
         public int CompareTo(IDateTimeWrap value)
         {
@@ -489,11 +472,6 @@ namespace SystemWrapper
             return DateTimeInstance.CompareTo(value);
         }
 
-        public int DaysInMonth(int year, int month)
-        {
-            return DateTime.DaysInMonth(year, month);
-        }
-
         public bool Equals(IDateTimeWrap value)
         {
             return DateTimeInstance.Equals(value);
@@ -502,31 +480,6 @@ namespace SystemWrapper
         public override bool Equals(object obj)
         {
             return DateTimeInstance.Equals(obj);
-        }
-
-        public bool Equals(IDateTimeWrap t1, IDateTimeWrap t2)
-        {
-            return DateTime.Equals(t1.DateTimeInstance, t2.DateTimeInstance);
-        }
-
-        public IDateTimeWrap FromBinary(long dateData)
-        {
-            return new DateTimeWrap(DateTime.FromBinary(dateData));
-        }
-
-        public IDateTimeWrap FromFileTime(long fileTime)
-        {
-            return new DateTimeWrap(DateTime.FromFileTime(fileTime));
-        }
-
-        public IDateTimeWrap FromFileTimeUtc(long fileTime)
-        {
-            return new DateTimeWrap(DateTime.FromFileTimeUtc(fileTime));
-        }
-
-        public IDateTimeWrap FromOADate(double d)
-        {
-            return new DateTimeWrap(DateTime.FromOADate(d));
         }
 
         public string[] GetDateTimeFormats()
@@ -554,6 +507,11 @@ namespace SystemWrapper
             return DateTimeInstance.GetHashCode();
         }
 
+        public void GetObjectData(SerializationInfo info, StreamingContext context)
+        {
+            (DateTimeInstance as ISerializable).GetObjectData(info,context);
+        }
+
         public TypeCode GetTypeCode()
         {
             return DateTimeInstance.GetTypeCode();
@@ -562,46 +520,6 @@ namespace SystemWrapper
         public bool IsDaylightSavingTime()
         {
             return DateTimeInstance.IsDaylightSavingTime();
-        }
-
-        public bool IsLeapYear(int year)
-        {
-            return DateTime.IsLeapYear(year);
-        }
-
-        public IDateTimeWrap Parse(string s)
-        {
-            return new DateTimeWrap(DateTime.Parse(s));
-        }
-
-        public IDateTimeWrap Parse(string s, IFormatProvider provider)
-        {
-            return new DateTimeWrap(DateTime.Parse(s, provider));
-        }
-
-        public IDateTimeWrap Parse(string s, IFormatProvider provider, DateTimeStyles styles)
-        {
-            return new DateTimeWrap(DateTime.Parse(s, provider, styles));
-        }
-
-        public IDateTimeWrap ParseExact(string s, string format, IFormatProvider provider)
-        {
-            return new DateTimeWrap(DateTime.ParseExact(s, format, provider));
-        }
-
-        public IDateTimeWrap ParseExact(string s, string format, IFormatProvider provider, DateTimeStyles style)
-        {
-            return new DateTimeWrap(DateTime.ParseExact(s, format, provider, style));
-        }
-
-        public IDateTimeWrap ParseExact(string s, string[] formats, IFormatProvider provider, DateTimeStyles style)
-        {
-            return new DateTimeWrap(DateTime.ParseExact(s, formats, provider, style));
-        }
-
-        public IDateTimeWrap SpecifyKind(IDateTimeWrap value, DateTimeKind kind)
-        {
-            return new DateTimeWrap(DateTime.SpecifyKind(value.DateTimeInstance, kind));
         }
 
         public TimeSpan Subtract(IDateTimeWrap value)
@@ -686,38 +604,6 @@ namespace SystemWrapper
         public IDateTimeWrap ToUniversalTime()
         {
             return new DateTimeWrap(DateTimeInstance.ToUniversalTime());
-        }
-
-        public bool TryParse(string s, out IDateTimeWrap result)
-        {
-            DateTime dtResult;
-            bool returnValue = DateTime.TryParse(s, out dtResult);
-            result = new DateTimeWrap(dtResult);
-            return returnValue;
-        }
-
-        public bool TryParse(string s, IFormatProvider provider, DateTimeStyles styles, out IDateTimeWrap result)
-        {
-            DateTime dtResult;
-            bool returnValue = DateTime.TryParse(s, provider, styles, out dtResult);
-            result = new DateTimeWrap(dtResult);
-            return returnValue;
-        }
-
-        public bool TryParseExact(string s, string[] formats, IFormatProvider provider, DateTimeStyles style, out IDateTimeWrap result)
-        {
-            DateTime dtResult;
-            bool returnValue = DateTime.TryParseExact(s, formats, provider, style, out dtResult);
-            result = new DateTimeWrap(dtResult);
-            return returnValue;
-        }
-
-        public bool TryParseExact(string s, string format, IFormatProvider provider, DateTimeStyles style, out IDateTimeWrap result)
-        {
-            DateTime dtResult;
-            bool returnValue = DateTime.TryParseExact(s, format, provider, style, out dtResult);
-            result = new DateTimeWrap(dtResult);
-            return returnValue;
         }
     }
 }

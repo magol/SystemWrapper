@@ -1,4 +1,6 @@
 using System;
+using System.Globalization;
+using System.Threading;
 
 namespace SystemWrapper.Threading
 {
@@ -7,19 +9,18 @@ namespace SystemWrapper.Threading
     /// </summary>
     public interface IThreadWrap
     {
-        // Methods
 
-        /// <summary>
-        /// Suspends the current thread for a specified time.
-        /// </summary>
-        /// <param name="millisecondsTimeout">The number of milliseconds for which the thread is blocked. Specify zero (0) to indicate that this thread should be suspended to allow other waiting threads to execute. Specify Infinite  to block the thread indefinitely.</param>
-        void Sleep(int millisecondsTimeout);
-
-        /// <summary>
-        /// Blocks the current thread for a specified time.
-        /// </summary>
-        /// <param name="timeout">A TimeSpan  set to the amount of time for which the thread is blocked. Specify zero to indicate that this thread should be suspended to allow other waiting threads to execute. Specify Timeout.Infinite to block the thread indefinitely.</param>
-        void Sleep(TimeSpan timeout);
+        CultureInfo CurrentCulture { get; set; }
+        bool IsAlive { get; }
+        ThreadState ThreadState { get; }
+        bool IsBackground { get; set; }
+        ThreadPriority Priority { get; set; }
+        int ManagedThreadId { get; }
+        void Abort();
+        void SetApartmentState(ApartmentState state);
+        void Start();
+        void Start(object parameter);
+        void Join();
 
         /*
                 // Methods
@@ -27,8 +28,7 @@ namespace SystemWrapper.Threading
             public Thread(ThreadStart start);
             public Thread(ParameterizedThreadStart start, int maxStackSize);
             public Thread(ThreadStart start, int maxStackSize);
-            [SecurityPermission(SecurityAction.Demand, ControlThread=true)]
-            public void Abort();
+
             [SecurityPermission(SecurityAction.Demand, ControlThread=true)]
             public void Abort(object stateInfo);
             [HostProtection(SecurityAction.LinkDemand, SharedState=true, ExternalThreading=true)]
@@ -58,8 +58,7 @@ namespace SystemWrapper.Threading
             public static LocalDataStoreSlot GetNamedDataSlot(string name);
             [SecurityPermission(SecurityAction.Demand, ControlThread=true)]
             public void Interrupt();
-            [HostProtection(SecurityAction.LinkDemand, Synchronization=true, ExternalThreading=true)]
-            public void Join();
+
             [HostProtection(SecurityAction.LinkDemand, Synchronization=true, ExternalThreading=true)]
             public bool Join(int millisecondsTimeout);
             [HostProtection(SecurityAction.LinkDemand, Synchronization=true, ExternalThreading=true)]
@@ -68,16 +67,12 @@ namespace SystemWrapper.Threading
             public static extern void MemoryBarrier();
             [SecurityPermission(SecurityAction.Demand, ControlThread=true)]
             public static void ResetAbort();
-            [HostProtection(SecurityAction.LinkDemand, Synchronization=true, SelfAffectingThreading=true)]
-            public void SetApartmentState(ApartmentState state);
+            
             [HostProtection(SecurityAction.LinkDemand, SharedState=true, ExternalThreading=true)]
             public static void SetData(LocalDataStoreSlot slot, object data);
             [ReliabilityContract(Consistency.WillNotCorruptState, Cer.Success), HostProtection(SecurityAction.LinkDemand, Synchronization=true, ExternalThreading=true)]
             public static void SpinWait(int iterations);
-            [MethodImpl(MethodImplOptions.NoInlining), HostProtection(SecurityAction.LinkDemand, Synchronization=true, ExternalThreading=true)]
-            public void Start();
-            [HostProtection(SecurityAction.LinkDemand, Synchronization=true, ExternalThreading=true)]
-            public void Start(object parameter);
+
             [HostProtection(SecurityAction.LinkDemand, Synchronization=true, SelfAffectingThreading=true)]
             public bool TrySetApartmentState(ApartmentState state);
             [MethodImpl(MethodImplOptions.NoInlining)]
@@ -136,18 +131,15 @@ namespace SystemWrapper.Threading
             // Properties
             public ApartmentState ApartmentState { get; [HostProtection(SecurityAction.LinkDemand, Synchronization=true, SelfAffectingThreading=true)] set; }
             public static Context CurrentContext { [SecurityPermission(SecurityAction.LinkDemand, Flags=SecurityPermissionFlag.Infrastructure)] get; }
-            public CultureInfo CurrentCulture { get; [SecurityPermission(SecurityAction.Demand, ControlThread=true)] set; }
+            
             public static IPrincipal CurrentPrincipal { get; [SecurityPermission(SecurityAction.Demand, Flags=SecurityPermissionFlag.ControlPrincipal)] set; }
             public static Thread CurrentThread { [ReliabilityContract(Consistency.WillNotCorruptState, Cer.MayFail)] get; }
             public CultureInfo CurrentUICulture { get; [HostProtection(SecurityAction.LinkDemand, ExternalThreading=true)] set; }
             public ExecutionContext ExecutionContext { [ReliabilityContract(Consistency.WillNotCorruptState, Cer.MayFail)] get; }
-            public bool IsAlive { get; }
-            public bool IsBackground { get; [HostProtection(SecurityAction.LinkDemand, SelfAffectingThreading=true)] set; }
+
             public bool IsThreadPoolThread { get; }
-            public int ManagedThreadId { [ReliabilityContract(Consistency.WillNotCorruptState, Cer.Success)] get; }
+
             public string Name { get; [HostProtection(SecurityAction.LinkDemand, ExternalThreading=true)] set; }
-            public ThreadPriority Priority { get; [HostProtection(SecurityAction.LinkDemand, SelfAffectingThreading=true)] set; }
-            public ThreadState ThreadState { get; }
         */
     }
 

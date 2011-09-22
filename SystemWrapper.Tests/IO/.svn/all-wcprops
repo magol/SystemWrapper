@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/76824/SystemWrapper.Tests/IO
+END
+DirectoryInfoWrapTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/76824/SystemWrapper.Tests/IO/DirectoryInfoWrapTests.cs
+END
+DirectoryWrapTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/21326/SystemWrapper.Tests/IO/DirectoryWrapTests.cs
+END
+BinaryReaderWrapTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/76824/SystemWrapper.Tests/IO/BinaryReaderWrapTests.cs
+END
+FileInfoWrapTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/20842/SystemWrapper.Tests/IO/FileInfoWrapTests.cs
+END

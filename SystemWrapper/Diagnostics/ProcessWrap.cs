@@ -12,6 +12,15 @@ namespace SystemWrapper.Diagnostics
 
 		#region Constructors and Initializers
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="T:SystemWrapper.Diagnostics.ProcessWrap"/> class from framework <see cref="Process"/> class.
+        /// </summary>
+        /// <param name="process"></param>
+        public ProcessWrap(Process process)
+        {
+            ProcessInstance = process;
+        }
+
 		/// <summary>
 		/// Initializes a new instance of the <see cref="T:SystemWrapper.Diagnostics.ProcessWrap"/> class.
 		/// </summary>

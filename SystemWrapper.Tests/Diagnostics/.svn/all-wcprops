@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/76779/SystemWrapper.Tests/Diagnostics
+END
+ProcessWrapTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/76779/SystemWrapper.Tests/Diagnostics/ProcessWrapTests.cs
+END
+ProcessStartInfoWrapTests.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/76779/SystemWrapper.Tests/Diagnostics/ProcessStartInfoWrapTests.cs
+END

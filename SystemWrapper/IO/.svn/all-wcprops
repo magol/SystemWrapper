@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/76779/SystemWrapper/IO
+END
+BinaryWriterWrap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/76717/SystemWrapper/IO/BinaryWriterWrap.cs
+END
+MemoryStreamWrap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/76779/SystemWrapper/IO/MemoryStreamWrap.cs
+END
+IStreamReaderWrap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/76779/SystemWrapper/IO/IStreamReaderWrap.cs
+END
+IFileWrap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/26671/SystemWrapper/IO/IFileWrap.cs
+END
+StreamWriterWrap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/76779/SystemWrapper/IO/StreamWriterWrap.cs
+END
+IDirectoryInfoWrap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/76717/SystemWrapper/IO/IDirectoryInfoWrap.cs
+END
+IBinaryWriterWrap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/76717/SystemWrapper/IO/IBinaryWriterWrap.cs
+END
+FileStreamWrap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/76717/SystemWrapper/IO/FileStreamWrap.cs
+END
+FileInfoWrap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/76717/SystemWrapper/IO/FileInfoWrap.cs
+END
+PathWrap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/64986/SystemWrapper/IO/PathWrap.cs
+END
+IMemoryStreamWrap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/76779/SystemWrapper/IO/IMemoryStreamWrap.cs
+END
+IStreamWriterWrap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/76779/SystemWrapper/IO/IStreamWriterWrap.cs
+END
+IFileStreamWrap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/76717/SystemWrapper/IO/IFileStreamWrap.cs
+END
+IFileInfoWrap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/76717/SystemWrapper/IO/IFileInfoWrap.cs
+END
+DirectoryWrap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/26671/SystemWrapper/IO/DirectoryWrap.cs
+END
+IStreamWrap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/76309/SystemWrapper/IO/IStreamWrap.cs
+END
+IPathWrap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/24654/SystemWrapper/IO/IPathWrap.cs
+END
+BinaryReaderWrap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/76779/SystemWrapper/IO/BinaryReaderWrap.cs
+END
+IDirectoryWrap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/26672/SystemWrapper/IO/IDirectoryWrap.cs
+END
+StreamReaderWrap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/76779/SystemWrapper/IO/StreamReaderWrap.cs
+END
+FileWrap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/26671/SystemWrapper/IO/FileWrap.cs
+END
+IBinaryReaderWrap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/76717/SystemWrapper/IO/IBinaryReaderWrap.cs
+END
+DirectoryInfoWrap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/76717/SystemWrapper/IO/DirectoryInfoWrap.cs
+END
+ITextReaderWrap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/76309/SystemWrapper/IO/ITextReaderWrap.cs
+END

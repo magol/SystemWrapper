@@ -1,0 +1,9 @@
+build
+bin
+obj
+*.user
+*.suo
+SystemWrapper2010.suo
+SystemWrapper2010.6.0.ReSharper.user
+_ReSharper.SystemWrapper2010
+_ReSharper.SystemWrapper

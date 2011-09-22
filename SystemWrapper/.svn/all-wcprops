@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/!svn/ver/78387/SystemWrapper
+END
+IAppDomainWrap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/76779/SystemWrapper/IAppDomainWrap.cs
+END
+SystemWrapper.snk
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/78387/SystemWrapper/SystemWrapper.snk
+END
+ConsoleWrap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/49987/SystemWrapper/ConsoleWrap.cs
+END
+IDateTimeWrap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/76779/SystemWrapper/IDateTimeWrap.cs
+END
+VersionWrap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/76779/SystemWrapper/VersionWrap.cs
+END
+SystemWrapper.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/78387/SystemWrapper/SystemWrapper.csproj
+END
+AppDomainWrap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/76779/SystemWrapper/AppDomainWrap.cs
+END
+IConsoleWrap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/49987/SystemWrapper/IConsoleWrap.cs
+END
+DateTimeWrap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/76779/SystemWrapper/DateTimeWrap.cs
+END
+CurrentCoverage.txt
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/27027/SystemWrapper/CurrentCoverage.txt
+END
+IVersionWrap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/76779/SystemWrapper/IVersionWrap.cs
+END

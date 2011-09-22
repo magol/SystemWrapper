@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/64998/SystemWrapper.Tests/libs/MbUnit
+END
+Gallio.dll
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/64998/SystemWrapper.Tests/libs/MbUnit/Gallio.dll
+END
+MbUnit.dll
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/64998/SystemWrapper.Tests/libs/MbUnit/MbUnit.dll
+END

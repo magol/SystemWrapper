@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/76648/SystemWrapper/Data/SqlClient
+END
+ISqlDataReaderWrap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/76648/SystemWrapper/Data/SqlClient/ISqlDataReaderWrap.cs
+END
+ISqlCommandWrap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/76648/SystemWrapper/Data/SqlClient/ISqlCommandWrap.cs
+END
+ISqlConnectionWrap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/76648/SystemWrapper/Data/SqlClient/ISqlConnectionWrap.cs
+END
+SqlDataReaderWrap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/76648/SystemWrapper/Data/SqlClient/SqlDataReaderWrap.cs
+END
+SqlCommandWrap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/76648/SystemWrapper/Data/SqlClient/SqlCommandWrap.cs
+END
+SqlConnectionWrap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/76648/SystemWrapper/Data/SqlClient/SqlConnectionWrap.cs
+END

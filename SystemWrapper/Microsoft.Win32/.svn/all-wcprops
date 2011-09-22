@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/76779/SystemWrapper/Microsoft.Win32
+END
+IRegistryWrap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/35085/SystemWrapper/Microsoft.Win32/IRegistryWrap.cs
+END
+RegistryKeyWrap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/76779/SystemWrapper/Microsoft.Win32/RegistryKeyWrap.cs
+END
+RegistryWrap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/35085/SystemWrapper/Microsoft.Win32/RegistryWrap.cs
+END
+IRegistryKeyWrap.cs
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/76779/SystemWrapper/Microsoft.Win32/IRegistryKeyWrap.cs
+END
